@@ -1,76 +1,153 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Axcel Gomez</title>
-        
-        <style>
-        h1 {
-            text-align:center;
-        }
-        
-        h1 {
-            font-style:oblique;
-        }
-        
-        h1 {
-            font-family:georgia;
-        }
-        
-        h2 {
-            font-family:georgia;
-        }
-        #navbar {
-            border:7px double;
-        }
-        body {
-            background-color:rgb(250, 235, 235);
-        }
-        h1 {
-            color:maroon;
-        }
-        a {
-            color:maroon;
-        }
-        #navbar {
-            border-color:orange;
-        }
-        h2 {
-            color:maroon;
-        }
-        h3 {
-            color:orange;
-        }
-        ul {
-            color:maroon;
-        }
-        </style>
-        
-    </head>
-    <body>
-    <h1>Axcel Gomez</h1>
-        <div id="navbar">
-        <ul>
-        <li><a href="#webpage-home">Home</a></li>
-        <li><a href="https://docs.google.com/presentation/d/1esahlyjCW1fVQNxg7Z9aa9lIPV7_omSIBhqAqDQILLk/edit#slide=id.p">About Me</a></li>
-        <li><a href="https://docs.google.com/presentation/d/1QgqKkKWHAVKFJzcWgc3fflxtGr5_ocPMrcw7OqEnEc4/edit#slide=id.p">Interests</a></li>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Mr. Yoho's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: orange;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: maroon;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("./img/home/south_sister.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
         </ul>
-        
-            
-            
-        </div>
-        
-        <div id="main">
-        <h2 id="webpage-home">Axcel Gomez</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Sand_dunes_-_Oceano_CA.jpg" width="75%">
-        <h3>Origin</h3>
-        <p>
-            My family comes from a small pueblo south of Guadalajara, Jalisco called Huejotitan. However, my family decided to migrate to the United States to have better oppurtunities for themselves and for their children. I was born in San Jose, California and raised in East Side San Jose. My family positively affected me because they made me care about my educationa and my future and I hope I could someday return the favor.
-            <h3>Current Position</h3>
-            Today, I currently attend Alpha: Cindy Avitia High School and I am a founding ninth-grade student. At Alpha, it is always a struggle, but as a community we all know that together we can struggle, overcome, and thrive. I also spend a lot of time with my family and makes me feel blessed for having such a great family like the one I have.
-        </p>
-        </div>
+    </div>
 
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Axcel Gomez's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">My family comes from a small pueblo south of Guadalajara, Jalisco called Huejotitan. However, my family decided to migrate to the United States to have better oppurtunities for themselves and for their children. I was born in San Jose, California and raised in East Side San Jose. My family positively affected me because they made me care about my educationa and my future and I hope I could someday return the favor.
 
-    </body>
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info">Today, I currently attend Alpha: Cindy Avitia High School and I am a founding ninth-grade student. At Alpha, it is always a struggle, but as a community we all know that together we can struggle, overcome, and thrive. I also spend a lot of time with my family and makes me feel blessed for having such a great family like the one I have.
+
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
